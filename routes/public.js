@@ -8,7 +8,6 @@ module.exports = [{
       directory: {
           path: "public",
           listing: false,
-          index: false
       }
   }
 }];

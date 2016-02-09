@@ -6,6 +6,7 @@ const Inert = require('inert');
 const Vision = require('vision');
 const HapiReactViews = require('hapi-react-views');
 const Routes = require('./routes/_routes');
+const Handlebars = require('handlebars');
 
 //
 // register transpilers for view engine to use on the fly. Used for React/JSX.
@@ -19,7 +20,7 @@ const server = new Hapi.Server();
 server.connection({ port: 3000 });
 
 //
-// register view engine with server
+// register view engine with server for server-side rendering...currently turned off in favor of client-side rendering
 server.register(Vision, (err) => {
 
     if (err) {
@@ -28,11 +29,11 @@ server.register(Vision, (err) => {
 
     server.views({
         engines: {
-            jsx: HapiReactViews,
+            html: Handlebars,
         },
         compileOptions: {}, // optional
         relativeTo: __dirname,
-        path: 'views',
+        path: 'public',
     });
 });
 

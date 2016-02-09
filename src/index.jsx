@@ -13,8 +13,14 @@ export default React.createClass({
           <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8"></link>
         </head>
         <body>
-          <div className="header">{this.props.message}</div>
-          <button>WAT!? YAS!!</button>
+          <h1 className="ui header">{this.props.message}</h1>
+          <h2>Stuff and Stuff</h2>
+          <button className="ui huge button">WAT!? YAS!!</button>
+          <div className="ui three item menu">
+            <a className="active item">Editorials</a>
+            <a className="item">Reviews</a>
+            <a className="item">Upcoming Events</a>
+          </div>
         </body>
         <script src="semantic.min.js"></script>
       </html>

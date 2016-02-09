@@ -16,12 +16,13 @@
 
 
 /* Standard */
+@import url(http://fonts.googleapis.com/css?family=Karma);
 .ui.header {
   border: none;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: 'Karma', 'Times New Roman', serif;
+  font-weight: normal;
   line-height: 1.2857em;
   text-transform: none;
   color: rgba(0, 0, 0, 0.87);
@@ -42,7 +43,7 @@
   font-weight: normal;
   padding: 0em;
   margin: 0em;
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 1.2em;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -55,8 +56,8 @@
   display: table-cell;
   opacity: 1;
   font-size: 1.5em;
-  padding-top: 0.14285em;
-  vertical-align: middle;
+  padding-top: 0.2em;
+  vertical-align: top;
 }
 
 /* With Text Node */
@@ -132,19 +133,19 @@
 ---------------*/
 
 h1.ui.header {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 h2.ui.header {
-  font-size: 1.714rem;
+  font-size: 1.33rem;
 }
 h3.ui.header {
-  font-size: 1.28rem;
+  font-size: 1.33rem;
 }
 h4.ui.header {
-  font-size: 1.071rem;
+  font-size: 1rem;
 }
 h5.ui.header {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Sub Header */
@@ -170,19 +171,19 @@ h5.ui.header .sub.header {
 
 .ui.huge.header {
   min-height: 1em;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 .ui.large.header {
-  font-size: 1.714em;
+  font-size: 1.33em;
 }
 .ui.medium.header {
-  font-size: 1.28em;
+  font-size: 1.33em;
 }
 .ui.small.header {
-  font-size: 1.071em;
+  font-size: 1em;
 }
 .ui.tiny.header {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 /* Sub Header */
@@ -193,7 +194,7 @@ h5.ui.header .sub.header {
   font-size: 1.14285714rem;
 }
 .ui.header .sub.header {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 .ui.small.header .sub.header {
   font-size: 1rem;
@@ -613,7 +614,7 @@ a.ui.inverted.grey.header:hover {
 
 .ui.dividing.header {
   padding-bottom: 0.21428571rem;
-  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
 }
 .ui.dividing.header .sub.header {
   padding-bottom: 0.21428571rem;
@@ -631,7 +632,7 @@ a.ui.inverted.grey.header:hover {
 
 .ui.block.header {
   background: #F3F4F5;
-  padding: 0.71428571rem 1rem;
+  padding: 1.3em 1em;
   box-shadow: none;
   border: 1px solid #D4D4D5;
   border-radius: 0.28571429rem;
@@ -657,8 +658,9 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.attached.header {
-  background: #FFFFFF;
-  padding: 0.71428571rem 1rem;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03)) repeat scroll 0 0 #F8F8F8;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03)) repeat scroll 0 0 #F8F8F8;
+  padding: 1.3 1em;
   margin-left: -1px;
   margin-right: -1px;
   box-shadow: none;
@@ -705,14 +707,22 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.28em;
+  font-size: 1.33em;
 }
 
 
 /*******************************
-         Theme Overrides
+           Overrides
 *******************************/
 
+h1.ui.header,
+.ui.huge.header {
+  font-weight: bold;
+}
+h2.ui.header,
+.ui.large.header {
+  font-weight: bold;
+}
 
 
 /*******************************

@@ -1,7 +1,7 @@
 var data = require('./data');
-var views = require('./views');
+var index = require('./index');
 var staticFiles = require('./public');
 
-var routes = [].concat(data, views, staticFiles);
+var routes = [].concat(data, index, staticFiles);
 
 module.exports = routes;
