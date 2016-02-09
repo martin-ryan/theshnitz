@@ -2,6 +2,7 @@
 
 const Hapi = require('hapi');
 const Good = require('good');
+const Inert = require('inert');
 const Vision = require('vision');
 const HapiReactViews = require('hapi-react-views');
 const Routes = require('./routes/_routes');
@@ -37,7 +38,13 @@ server.register(Vision, (err) => {
 
 //
 // SET ROUTES
-server.route(Routes);
+server.register(Inert, function(err){
+  if (err) {
+    throw err;
+  }
+
+  server.route(Routes);
+});
 
 //
 // register "Good" activity log with server
