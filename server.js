@@ -4,15 +4,14 @@ const Hapi = require('hapi');
 const Good = require('good');
 const Inert = require('inert');
 const Vision = require('vision');
-const HapiReactViews = require('hapi-react-views');
 const Routes = require('./routes/_routes');
 const Handlebars = require('handlebars');
 
 //
 // register transpilers for view engine to use on the fly. Used for React/JSX.
-require('babel-register')({
-    presets: ['react', 'es2015']
-});
+// require('babel-register')({
+//     presets: ['react', 'es2015']
+// });
 
 //
 // create server

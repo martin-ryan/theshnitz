@@ -8,7 +8,7 @@ module.exports = [{
     view: {
       template: 'index',
       context:{
-        message: "hello wooooorld!",
+        message: "hello wooooorldzzzz!",
         title: "NAME ME!"
       }
     }
